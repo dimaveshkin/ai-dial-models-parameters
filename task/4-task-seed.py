@@ -1,3 +1,5 @@
+from random import seed
+
 from task.app.main import run
 
 # TODO:
@@ -10,6 +12,8 @@ from task.app.main import run
 
 run(
     deployment_name='gpt-4o',
+    n=5,
+    seed=-10
     # TODO:
     #  1. Use `seed` parameter with value 42 (or whatever you want)
     #  2. Use `n` parameter with value 5
